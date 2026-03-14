@@ -1,0 +1,38 @@
+O que ele deseja: 
+Verificar Faturamento x tempo (7 dias, Mês, Ano)
+
+Recebemos Jsons
+----
+Tela de login
+Dashboard de faturamento total (Linear Crescimento)
+Dashboard de faturamento por categoria
+
+KPIs: 
+Categoria Vencedora de todo periodo do Mẽs
+Qual categoria mais vendeu na semana
+Vendas na semana (FEITO)
+Faturamento Total / Semana (FEITO)
+
+Quais dados necessários:
+discountedTotal (https://dummyjson.com/carts)
+category and title (https://dummyjson.com/products)
+
+
+---
+produtos
+carrinho N:N Produtos
+usuarios 
+
+---
+Produtos
+    id_produto (PK) (Vem da API)
+    titulo
+    categoria
+
+Vendas
+    id_item_venda (PK) 
+    id_carrinho
+    id_produto (FK)
+    quantidade
+    preco_total_item (O discountedTotal proporcional do item)
+    data_venda (A data simulada que você vai injetar no Python)
